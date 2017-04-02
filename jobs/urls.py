@@ -3,7 +3,9 @@ from django.conf.urls import url
 from . import views
 
 app_name = 'jobs'
+
 urlpatterns = [
+    # ex: / (homepage of the app)
     url(r'^$', views.index, name='index'),
     # ex: /jobs/1/
     url(r'^(?P<id_job>[0-9]+)/$', views.job, name='job'),

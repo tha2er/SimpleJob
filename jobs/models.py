@@ -14,7 +14,7 @@ class Job(models.Model):
         db_table 	= 'jobs'
 
     def __str__(self):
-        return str(self.id_job) + " " + self.job_title
+        return str(self.id_job)
 
     def jobStatus(self):
         if self.is_active:

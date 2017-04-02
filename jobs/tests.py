@@ -1,7 +1,7 @@
 from django.test 	import TestCase
 from .models 		import Job,JobApplication
 
-
+# a test case for adding new Job application for the most recent Job in database.
 class JobApplicationTests(TestCase):
 
     def test_apply_for_a_job(self):
