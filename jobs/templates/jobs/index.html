@@ -1,0 +1,33 @@
+{% extends "jobs/base.html" %}
+
+{% block content %}
+
+{% if latestJobsList %}
+	<div class="row" style="padding-top: 5%">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Find below lasted jobs
+                </h1>
+            </div>
+
+            {% for job in latestJobsList %}
+
+            	<div class="col-md-4">
+	                <div class="panel panel-default">
+	                    <div class="panel-heading">
+	                        <h4><i class="fa fa-fw fa-check"></i>{{ job.job_title|title }}</h4>
+	                    </div>
+	                    <div class="panel-body">
+	                        <p>{{ job.job_desc }}</p>
+	                        <a href="{% url 'jobs:job' job.id_job %}" class="btn btn-default">More details</a>
+	                    </div>
+	                </div>
+            	</div>
+
+            {% endfor %}
+    </div>
+{% else %}
+    <p>No Jobs are available yet, Plesae check again later.</p>
+{% endif %}
+
+{% endblock %}

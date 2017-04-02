@@ -1,0 +1,26 @@
+{% extends "jobs/base.html" %}
+
+{% block content %}
+<div class="row" style="padding-top: 5%">
+            <div class="col-lg-12">
+                <h3 class="page-header">
+                   Thank you {{ jobApplication.name }} for applying for  {{ job.job_title }}
+                </h3>
+            </div>
+</div>
+
+        <div class="well">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>What next ?</h3>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" href="{% url 'jobs:index' %}">Vist our home page</a>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" href="{% url 'jobs:contact' %}">Contact us ?</a>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
