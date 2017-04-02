@@ -25,13 +25,13 @@ Hello there,
 
 
 -- What now ?
+
 	- The website should now be up and running under the default Django server configs http://127.0.0.1:8000/
 	- You are free to try out the website such as try to apply for any job anonymouslly or Post a job.
 	- Login to Admin backend at http://127.0.0.1:8000/admin - a demo superuser (username: thaer password: django@123).
 	- In Admin backend try to view the jobs application to approve or reject any one as follow :
 		- Select any job application and edit it.
 		- Change the status field to one of the following (Pending,Approved or Rejected).
-	
 	- In Admin backend try to view the jobs to active or deactive any job as follow :
 		- Select any job and edit it.
 		- Change the is_active field to one of the following (1 = active, 0 = not active).
